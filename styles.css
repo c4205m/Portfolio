@@ -330,7 +330,7 @@ body, html {
 }
 
 .bannerexp > div:first-of-type {
-  padding: 50% 20%;
+  margin: 0 20%;
 }
 .bannerexp > h1, p {
   line-height: 0;
@@ -363,3 +363,16 @@ body, html {
 
 /* CV section */
 
+.contentexp {
+  padding: 30px 20vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text > p {
+  line-height: 20px;
+}
+
+#vesika {
+  background-color: #000000;
+  width: 10%;
+}
