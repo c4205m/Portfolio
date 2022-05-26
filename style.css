@@ -6,7 +6,7 @@ body, html {
     bottom: 0px;
     width: 100%;
     font-size: 16px;
-    background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+    background: url('temp_img/BG_landing.png') no-repeat center center/cover;
 }
 
 .landing {
@@ -72,18 +72,18 @@ body, html {
 }
 
 #exp:active {
-    background-color: #f2d288;
+    background-color: #f2d288de;
 }
 #port:active {
-    background-color: #c98474;
+    background-color: #c98474de;
 }
 
 @media (hover:hover) {
     #exp:hover {
-        background-color: #f2d288;
+        background-color: #f2d288de;
     }
     #port:hover {
-        background-color: #c98474;
+        background-color: #c98474de;
     }
 }
 
