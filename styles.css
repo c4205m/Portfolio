@@ -111,7 +111,7 @@ body, html {
 
 .parent > iframe {
   width: 100%;
-  overflow: hidden;
+  height: 100%;
   white-space: nowrap;
   background: #ff0000;
 }
