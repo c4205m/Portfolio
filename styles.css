@@ -109,6 +109,10 @@ body, html {
   object-fit: cover;  
 }
 
+.parent > iframe {
+  align-self: center;
+}
+
 .bannerexp {
   height: 100vh;
   background-color: aquamarine;
