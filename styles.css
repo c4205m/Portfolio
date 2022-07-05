@@ -84,7 +84,7 @@ body, html {
 .parent {
   --gap: 16px;
   --num-cols: 3;
-  --row-height: 300px; 
+  --row-height: 400px; 
 
   box-sizing: border-box;
   padding: var(--gap);
