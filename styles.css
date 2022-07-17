@@ -84,7 +84,7 @@ body, html {
 .parent {
   --gap: 16px;
   --num-cols: 3;
-  --row-height: 400px; 
+  --row-height: 300px; 
 
   box-sizing: border-box;
   padding: var(--gap);
@@ -248,8 +248,8 @@ body, html {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1600px) {
   .parent{
-    --num-cols: 2;
-    --row-height: 200px;
+    --num-cols: 3;
+    --row-height: 20vw;
   }
 
   .p-g-col-2 {
@@ -266,8 +266,8 @@ body, html {
 
 @media screen and (max-width: 1000px) {
   .parent{
-    --num-cols: 2;
-    --row-height: 200px;
+    --num-cols: 3;
+    --row-height: 20vw;
   }
 
   .p-g-col-2 {
@@ -286,7 +286,7 @@ body, html {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .parent{
     --num-cols: 1;
     --row-height: 300px;
