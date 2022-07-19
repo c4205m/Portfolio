@@ -55,35 +55,44 @@
         <div class="mt-5" style="margin: 10%;">
             
             <h1>Contact me!</h1>
-            <form class="row g-3" action="https://formsubmit.co/ylmzcanmstf@gmail.com" method="POST">
-                <div class="col-md-6">
-                    <label for="firstName" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="this is required" required>
-                </div>
+            <form class="row g-3" action="https://formsubmit.co/fce790de8209ac3defab5ef5afe956f9" method="POST">
+              <!-- honeypot -->
+              <input type="text" name="_honey" style="display: none;">
 
-                <div class="col-md-6">
-                    <label for="lastName" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="you don’t have to...">
-                </div>
+              <!-- disable captcha -->
+              <input type="hidden" name="_captcha" value="hidden">
 
-                <div class="col-md-8">
-                    <label for="emailInfo" class="form-label">E-mail</label>
-                    <input type="text" class="form-control" id="emailInfo" placeholder="this is required" required>
-                </div>
+              <!-- success modal -->
+              <input id="isSucceed" type="hidden" name="_next" value="true">
 
-                <div class="col-md-4">
-                    <label for="phoneNumber" class="form-label">Phone</label>
-                    <input type="text" class="form-control" id="phoneNumber" placeholder="+90 (555) 555-1212">
-                </div>
+              <div class="col-md-6">
+                  <label for="firstName" class="form-label">First name</label>
+                  <input type="text" class="form-control" name="name" id="firstName" placeholder="this is required" required>
+              </div>
 
-                <div class="col-md-12">
-                    <label for="comments" class="form-label">Comment, questions?</label>
-                    <textarea class="form-control" id="comments" rows="3" placeholder="this is required" required></textarea>
-                </div>
+              <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last name</label>
+                  <input type="text" class="form-control" name="last&nbsp;name" id="lastName" placeholder="you don’t have to...">
+              </div>
 
-                <div class="col-md-12">
-                    <button type="submit" class="btn btn-secondary">Submit</button>
-                </div>
+              <div class="col-md-8">
+                  <label for="emailInfo" class="form-label">E-mail</label>
+                  <input type="text" class="form-control" name="email" id="emailInfo" placeholder="this is required" required>
+              </div>
+
+              <div class="col-md-4">
+                  <label for="phoneNumber" class="form-label">Phone</label>
+                  <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+90 (555) 555-1212">
+              </div>
+
+              <div class="col-md-12">
+                  <label for="comments" class="form-label">Comment, questions?</label>
+                  <textarea class="form-control" name="commment,&nbsp;questions" id="comments" rows="3" placeholder="this is required" required></textarea>
+              </div>
+
+              <div class="col-md-12">
+                  <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
             </form>
         </div>
       

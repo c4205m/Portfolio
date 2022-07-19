@@ -86,3 +86,10 @@ scrollContainer.addEventListener('wheel', function () {
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
 });
+
+//
+//contact submit succeed
+function getVal() {
+    const val = document.querySelector('#isSucceed').value;
+    console.log(val);
+  }
