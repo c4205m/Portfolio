@@ -21,15 +21,14 @@
     color: rgb(255, 255, 255);
     text-align: left;
     font-family: 'Montserrat', sans-serif;
+    transition: margin-left 0.5s ease;
   }
-
 
   .banner-text > h1{
     font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 0;
     margin-left: 50px;
-    transition: margin-left 0.5s ease;
     text-shadow:
       2px 2px 5px rgba(1, 0, 19, 0.4),
       4px 4px 7px rgba(1, 0, 19, 0.3),
@@ -43,7 +42,43 @@
     margin-right: 50px;
     font-size: 1.5rem;
     margin-left: 50px;
-    transition: margin-left 0.5s ease;
+  }
+
+  .flex-size {
+    width: 33%;
+    height: 300px;
+  }
+
+  /* PORTFOLIO PAGE GALLERY HOVER */
+
+  .img-box {
+    position: relative;
+  }
+
+  .gal-image {
+    opacity: 1;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .img-card {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .img-box:hover .gal-image {
+    opacity: 0.3;
+  }
+  
+  .img-box:hover .img-card {
+    opacity: 1;
   }
 
   @media (min-width: 1300px) {
