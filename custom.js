@@ -74,15 +74,3 @@ function checkMediaQuery() {
             "fs-1");
   }
 }
-
-// Add a listener for when the window resizes
-window.addEventListener('resize', checkMediaQuery);
-
-//
-//horizontal scroll
-const scrollContainer = document.querySelector('#horizon-scroll');
-
-scrollContainer.addEventListener('wheel', function () {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-});
