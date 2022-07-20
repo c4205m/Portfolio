@@ -77,3 +77,42 @@ function checkMediaQuery() {
 window.addEventListener('resize', checkMediaQuery);
 
 //
+//FORM VALIDATION
+const inputs = document.querySelectorAll('input');
+
+const patterns = {
+    firstName: /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïıłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u,
+//   username: /^[a-z\d]{2,12}$/i,
+//   password: /^[\d\w@-]{8,20}$/i,
+    emailInfo: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+    phoneNumber: /^\+(?:[0-9] ?){6,14}[0-9]$/
+};
+
+inputs.forEach((input) => {
+    input.addEventListener('keyup', (event) => {
+    
+        validate(event.target, patterns[event.target.attributes.id.value]);
+
+    });
+});
+
+function validate(field, regex) {
+  if (regex.test(field.value)) {
+    
+    field.className = 'form-control valid';
+
+  } else {
+    
+    field.className = 'form-control invalid';
+
+  }
+}
+
+//
+//FORM CLEAN ON REFRESH
+
+    document.getElementById('firstName').value ='';
+    document.getElementById('lastName').value ='';
+    document.getElementById('emailInfo').value ='';
+    document.getElementById('phoneNumber').value ='';
+    document.getElementById('comments').value ='';

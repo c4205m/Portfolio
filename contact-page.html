@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,100&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">  
     <title>Can Mustafa Yilmaz</title>
+    <link rel="icon" type="image/x-icon" href="./pics/logo-ico-favicon.ico">
     <link href="./css/main.min.css" rel="stylesheet">
     <link href="./css/custom.css" rel="stylesheet">
 </head>
@@ -53,9 +54,9 @@
     <div id="scroll" class="d-flex flex-column justify-content-center bg-dark text-white" style="height: 100vh; overflow-x: hidden;" >
         
         <div class="my-auto" style="margin: 10%;">
-            
+          <!-- action="https://formsubmit.co/fce790de8209ac3defab5ef5afe956f9" method="POST" -->
             <h1>Contact me!</h1>
-            <form class="row g-3" action="https://formsubmit.co/fce790de8209ac3defab5ef5afe956f9" method="POST">
+            <form class="row g-3" >
               <!-- honeypot -->
               <input type="text" name="_honey" style="display: none;">
 
@@ -65,33 +66,36 @@
               <!-- success -->
               <input id="isSucceed" type="hidden" name="_next" value="https://c42m05.github.io/c42m05/contact-success-page.html">
 
-              <div class="col-md-6">
+              <div class="form-group col-md-6">
                   <label for="firstName" class="form-label">First name</label>
                   <input type="text" class="form-control" name="name" id="firstName" placeholder="this is required" required>
-              </div>
+                  <small id="nameHelp" class="form-text">Come on, don't be shy</small>
+                </div>
 
-              <div class="col-md-6">
+              <div class="form-group col-md-6">
                   <label for="lastName" class="form-label">Last name</label>
                   <input type="text" class="form-control" name="last&nbsp;name" id="lastName" placeholder="you don’t have to...">
               </div>
 
-              <div class="col-md-8">
+              <div class="form-group col-md-8">
                   <label for="emailInfo" class="form-label">E-mail</label>
-                  <input type="text" class="form-control" name="email" id="emailInfo" placeholder="this is required" required>
-              </div>
+                  <input type="email" class="form-control" name="email" id="emailInfo" placeholder="this is required" required>
+                  <small id="emailHelp" class="form-text">Enter valid email address.</small>
+                </div>
 
-              <div class="col-md-4">
+              <div class="form-group col-md-4">
                   <label for="phoneNumber" class="form-label">Phone</label>
-                  <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+90 (555) 555-1212">
-              </div>
+                  <input type="tel" class="form-control" name="phone" id="phoneNumber" placeholder="+90 (555) 555-1212">
+                  <small id="phoneHelp" class="form-text">Not required but must be real.</small>
+                </div>
 
-              <div class="col-md-12">
+              <div class="form-group col-md-12">
                   <label for="comments" class="form-label">Comment, questions?</label>
                   <textarea class="form-control" name="commment,&nbsp;questions" id="comments" rows="3" placeholder="this is required" required></textarea>
               </div>
 
               <div class="col-md-12">
-                  <button type="submit" class="btn btn-secondary">Submit</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
         </div>
