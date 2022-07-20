@@ -27,7 +27,6 @@ window.addEventListener("scroll", () => {
 });
 
 //
-
 //header list control
 var ulElement = document.querySelector("#offcanvas-text");
 
@@ -74,3 +73,7 @@ function checkMediaQuery() {
             "fs-1");
   }
 }
+
+window.addEventListener('resize', checkMediaQuery);
+
+//
