@@ -1,3 +1,8 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* BANNER ARROW ANIMATION */
 .arrow-anim {
     margin-top: 20px;
     -moz-animation: bounce 2s infinite;
@@ -81,16 +86,6 @@
     opacity: 1;
   }
 
-  @media (min-width: 1300px) {
-    .banner-text > h1{
-      margin-left: 500px;
-    }
-  
-    .banner-text > p {
-      margin-left: 500px;
-    }
-  }
-
   /* FORM VALIDATION */
 
   .form-control.valid {
@@ -114,3 +109,17 @@
     margin-bottom: 20px;
     transition: opacity .4s ease-out;
   }
+
+  /* MEDIA QUERIES */
+
+  @media (min-width: 1300px) {
+    .banner-text > h1{
+      margin-left: 500px;
+    }
+  
+    .banner-text > p {
+      margin-left: 500px;
+    }
+  }
+
+  

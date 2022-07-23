@@ -1,36 +1,59 @@
-//header color control
+//
+//HEADER CONTROLS
+//
+//HEADER CONTROL -OPACITY AND COLOR
+
+var navElement = document.querySelector("#vanish");
+var threshold = 50;
+var color = "bg-secondary";
+var transparent = "bg-transparent"
+
+//Check position and initialize
 window.addEventListener("scroll", () => {
 
-    var top = Math.round(window.scrollY);
     var scrollElementRect = document.querySelector("#scroll").getBoundingClientRect();
     var scrollElement = Math.round(scrollElementRect.top);
-    var navElement = document.querySelector("#vanish");
-    var threshold = 50;
-    var color = "bg-secondary";
-    var transparent = "bg-transparent"
-
 
     if (scrollElement <= threshold) {
 
         navElement.classList.remove(transparent);
         navElement.classList.add(color);
-        
-
+    
     } else if (scrollElement > threshold) {
 
         navElement.classList.remove(color);
         navElement.classList.add(transparent);
         
-    
     }
 
 });
 
-//
-//header list control
+//Check position
+var scrollElementRectS = document.querySelector("#scroll").getBoundingClientRect();
+var scrollElementS = Math.round(scrollElementRectS.top);
+console.log(scrollElementS);
+
+function startingPosition () {
+
+    if (scrollElementS <= 0) {
+
+        navElement.classList.remove(transparent);
+        navElement.classList.add(color);
+    
+    } else if (scrollElementS > 0) {
+    
+        navElement.classList.remove(color);
+        navElement.classList.add(transparent);
+        
+    }
+}
+
+window.onload = startingPosition;
+
+//HEADER LIST SIZE CONTROL
 var ulElement = document.querySelector("#offcanvas-text");
 
-//check size
+//Check size
 
 const mediaQuery = window.matchMedia('(max-width: 992px)')
 
@@ -47,7 +70,7 @@ if (mediaQuery.matches) {
 
 }
 
-//check resizes and initiate
+//Check resizes and initiate
 function checkMediaQuery() {
   
     // Check if the media query is true
@@ -78,6 +101,8 @@ window.addEventListener('resize', checkMediaQuery);
 
 //
 //FORM VALIDATION
+//
+
 const inputs = document.querySelectorAll('input');
 
 const patterns = {
@@ -110,6 +135,7 @@ function validate(field, regex) {
 
 //
 //FORM CLEAN ON REFRESH
+//
 
     document.getElementById('firstName').value ='';
     document.getElementById('lastName').value ='';

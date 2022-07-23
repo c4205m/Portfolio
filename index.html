@@ -1,31 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Can Mustafa Yilmaz</title>
-    <link rel="icon" type="image/x-icon" href="./pics/logo-ico-favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,100&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">  
+    <title>About - Can Mustafa</title>
+    <link rel="icon" type="image/x-icon" href="./pics/logo-ico-favicon.ico">
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
 </head>
-<body>
-    <div class="landing">
-        <a class="frame" id="exp" href="about-page.html"><p>about</p></a>
-        <a class="frame" id="port" href="portfolio-page.html"><p>portfolio</p></a> 
-        <!-- <div id="framecolholder">
-            <div class="framecol" id="color1"></div>
-            <div class="framecol" id="color2"></div>
-        </div> -->
 
+<body>
+  <div style="
+    background: url('./pics/cover_index.png') no-repeat center center/cover; height: 100vh;">
+    
+    <nav id="vanish" class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container-fluid mx-lg-5">
+        <a class="navbar-brand" href="index.html">
+          <img src="./pics/logo_header.png" width="30" height="30" alt="C"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-start text-bg-primary" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+          <a class="navbar-brand mx-auto my-5 py-2 d-lg-none" href="index.html">
+            <img src="./pics/logo_offcanvas.png" width="100" height="100" alt="C"></a>
+
+          <ul id="offcanvas-text" class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="portfolio-page.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact-page.html">Contact</a>
+            </li>
+          </ul>
+
+          <p class="mt-auto text-white-50 mx-auto text-center position-relative w-100 d-lg-none">
+            /// canmustafayilmaz - 2022
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="position-absolute top-50 start-0 translate-middle-y banner-text">
+      <h1>Hello, I'm Can</h1>
+      <p>a 3D artist</p>
+    </div>
+    <a class="btn btn-lg text-nowrap text-white position-absolute bottom-0 start-50 translate-middle" href="#scroll" role="button">
+      <div class="arrow-anim">
+        &#9660;
+      </div>
+    </a>
+  </div>
+
+  <div id="scroll" class="d-flex flex-column justify-content-center bg-dark text-white text-center">
+    <div class="d-flex flex-column flex-lg-row align-items-center mx-auto" style="margin: 30vh;">
+      <div class="d-flex" >
+        <main class="px-5 my-auto mx-auto">
+          <h1>Well...</h1>
+          <p class="lead">I am preparing myself 
+            as a generalist in 3D.</p>
+            <!-- <br> -->
+          <p class="lead">Aiming for career in game industry, I am 
+            eager to gain some professional experiences and learn industry conventions.
+            After graduation from film school, I set a 
+            lifetime achievement for being a cinematographer. During my study in university,
+            I realized conventional cinema was not enough for me to telling stories. Therefore my goal turn into
+            being a gamedev. That's how I begin to interest
+            in making game assets and learning code. I 
+            believe the integration of film making and gaming
+            with ever developing tech, new cinema habits will evolve into intaractive game environments.
+            So making of movies will contain programming and AI as well.
+            </p>
+            <!-- <br> -->
+          <p class="lead">I like 3D modelling and creating procedural models and textures. Already engaged with game engines
+            to make some short movies and a 2D game in Godot with GDScript. Currently, learning C++ -for better performance- to making my own games in UE. 
+          </p>
+          <!-- <p class="lead">
+            <a href="CV_final.pdf" class="btn btn-lg btn-secondary fw-bold border-white bg-light">Download CV</a>
+          </p> -->
+        </main>
+      </div>
+
+      <div class="mt-4">
+        <p style="
+            color: #fff;
+            mix-blend-mode: difference;
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 4em;
+            font-weight: bold;
+            position: absolute;
+            transform: rotate(-20deg) translateX(0%) translateY(10%);">
+          c42m0S</p>
+        <div style="
+          align-self: center;
+          border-radius: 50%;
+          position: relative;
+          z-index: 1;
+          background: url('./pics/img_profile.png') no-repeat center center/cover;
+          width: 300px;
+          height: 300px;
+          padding: 10px;">
+        </div>
+        <p class="lead mt-4">
+          <a target="_blank" href="pdf-view.html" class="btn btn-primary my-2">Call to action</a>
+        </p>
+      </div>
     </div>
     
-    <div class="logo">
-        <div class="logotxt">
-            <h1>[can]mustafa</h1>
-            <p>3D artist</p>
-        </div>
-    </div>
-      
+    <footer class="mt-auto text-white-50 mx-auto position-relative w-100">
+      <p>/// canmustafayilmaz - 2022</p>
+    </footer>
+  </div>
+  
+<!-- javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="custom.js"></script> 
 </body>

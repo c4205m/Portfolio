@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,100&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">  
+    <title>short:Untitled</title>
+
+    <!-- statusbar themes -->
+    <meta name="theme-color" content="#999999" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <link rel="icon" type="image/x-icon" href="./pics/logo-ico-favicon.ico">
+    <link href="./css/main.min.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+  <div style="
+    background: url('./pics/untitled/cover.webp') no-repeat center center/cover; height: 100vh; overflow-x: hidden;">
+
+    <nav id="vanish" class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container-fluid mx-lg-5">
+        <a class="navbar-brand" href="index.html">
+          <img src="./pics/logo_header.png" width="30" height="30" alt="C"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-start text-bg-primary" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+          <a class="navbar-brand mx-auto my-5 py-2 d-lg-none" href="index.html">
+            <img src="./pics/logo_offcanvas.png" width="100" height="100" alt="C"></a>
+
+          <ul id="offcanvas-text" class="navbar-nav ms-auto mb-2 mb-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="portfolio-page.html">Portfolio</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact-page.html">Contact</a>
+            </li>
+          </ul>
+
+          <p class="mt-auto text-white-50 mx-auto text-center position-relative w-100 d-lg-none">
+            /// canmustafayilmaz - 2022
+          </p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="position-absolute top-50 start-0 translate-middle-y banner-text">
+      <h1>Portfolio</h1>
+      <p>A mix of personal and clients projects.</p>
+    </div> -->
+    <a id="jump-btn" class="btn btn-lg text-nowrap text-white position-absolute bottom-0 start-50 translate-middle" href="#scroll" role="button">
+      <div class="arrow-anim">
+        &#9660;
+      </div>
+    </a>
+  </div>
+
+  <div id="scroll" class="d-flex flex-column justify-content-center bg-dark text-white text-center"  style="overflow-x: hidden;">
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Album example</h1>
+          <p class="lead text-white">Something short and leading about the collection below—its contents, 
+            the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it 
+            entirely.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="row gx-0"> 
+      
+      <div class="col-md-4 mb-0">
+        <div>
+            <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-fishonplate">
+              <img
+              src="./pics/untitled/V-fishOnPlate.webp"
+              class="w-100 gal-image"
+              alt="Fish on Plate"
+              style="object-fit: cover;
+                height: 960px;" 
+              />
+            </a>
+
+            <div id="exampleModal-fishonplate" class="modal" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+                <div class="modal-content bg-dark">
+                  <div class="modal-header">
+                    <h2>Scene Deconstruction</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="./pics/untitled/V-fishOnPlate.webp"
+                      class="w-100 gal-image"
+                      alt="Fish on Plate"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>            
+        </div>
+
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-fishscales">
+            <img
+            src="./pics/untitled/S-fishScales.webp"
+            class="w-100 gal-image"
+            alt="Fish Scale Texture"
+            style="object-fit: cover;
+              height: 240px;"
+            />
+          </a>
+
+          <div id="exampleModal-fishscales" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>Fish Scale Texture</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/S-fishScales.webp"
+                    class="w-100 gal-image"
+                    alt="Fish Scale Texture"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-fishEaten">
+            <img
+            src="./pics/untitled/W-half-fishEaten.webp"
+            class="w-100 gal-image"
+            alt="Eaten fish on a plate"
+            style="object-fit: cover;
+              height: 240px;"
+            />
+          </a>
+
+          <div id="exampleModal-fishEaten" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>Scene from movie</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-half-fishEaten.webp"
+                    class="w-100 gal-image"
+                    alt="Eaten fish on a plate"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+      </div>
+
+      <!-- %%%%%%%%%%%%%%%% -->
+
+      <div class="col-md-4 mb-0">
+
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-closecam">
+            <img
+            src="./pics/untitled/S-closeUpCam.webp"
+            class="w-100 gal-image"
+            alt="Close up camera on a woman face"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-closecam" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>Scene from movie</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/S-closeUpCam.webp"
+                    class="w-100 gal-image"
+                    alt="Close up camera on a woman face"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-closecamdec">
+            <img
+            src="./pics/untitled/S-closeUpCam-deconst.webp"
+            class="w-100 gal-image"
+            alt="Close up camera on a woman face"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-closecamdec" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>Wireframe deconstruction</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/S-closeUpCam-deconst.webp"
+                    class="w-100 gal-image"
+                    alt="Close up camera on a woman face"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+        <div style="height: 480px; display: flex; align-items: center; justify-content: center;">
+          <p class="lead" style="padding: 15px;">
+           Sofware used: <br> <br>
+           Blender, 
+           Adobe After Effects, 
+           Adobe Photoshop, 
+           Adobe Premiere.
+          </p>          
+       </div>
+
+       <!-- ################## -->
+
+      </div>
+
+      <!-- %%%%%%%%%%%%%%%% -->
+
+      <div class="col-md-4 mb-0">
+
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-capsinkanim">
+            <img
+            src="./pics/untitled/W-anim-capSinking-deconst.gif"
+            class="w-100 gal-image"
+            alt="Plastic bottle cap under water"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-capsinkanim" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>Wireframe scene from movie</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-anim-capSinking-deconst.gif"
+                    class="w-100 gal-image"
+                    alt="Plastic bottle cap under water"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+        <div style="height: 480px; display: flex; align-items: center; justify-content: center;">
+          <p class="lead" style="padding: 15px;">
+           modeled, textured, shaded, composed, rendered and edited
+          </p>          
+       </div>
+
+       <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-capsinkdec">
+            <img
+            src="./pics/untitled/S-capSinking-deconst.webp"
+            class="w-100 gal-image"
+            alt="Plastic bottle cap under water"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-capsinkdec" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>Wireframe deconstruction</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/S-capSinking-deconst.webp"
+                    class="w-100 gal-image"
+                    alt="Plastic bottle cap under water"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+      </div>
+
+      <!-- %%%%%%%%%%%%%%%% -->
+
+      <div class="col-md-4 mb-0">
+
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-fishswimming">
+            <img
+            src="./pics/untitled/W-fishswimming.webp"
+            class="w-100 gal-image"
+            alt="Fish swimming underwater"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-fishswimming" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>Wireframe deconstruction</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-fishswimming.webp"
+                    class="w-100 gal-image"
+                    alt="Fish swimming underwater"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-panfrise">
+            <img
+            src="./pics/untitled/W-panfrise.webp"
+            class="w-100 gal-image"
+            alt="Pan fried oil"
+            style="object-fit: cover;
+              height: 240px;"
+            />
+          </a>
+
+          <div id="exampleModal-panfrise" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>3D view deconstruction from movie</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-panfrise.webp"
+                    class="w-100 gal-image"
+                    alt="Pan fried oil"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+
+       <!-- ################## -->
+
+       <div>
+        <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-sunrise">
+          <img
+          src="./pics/untitled/W-sunrise.webp"
+          class="w-100 gal-image"
+          alt="Sunrise in ocean"
+          style="object-fit: cover;
+            height: 240px;"
+          />
+        </a>
+
+        <div id="exampleModal-sunrise" class="modal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h3>Scene from movie</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="./pics/untitled/W-sunrise.webp"
+                  class="w-100 gal-image"
+                  alt="Sunrise in ocean"
+                />
+              </div>
+            </div>
+          </div>
+        </div>            
+      </div>
+
+     <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-forkKnife">
+            <img
+            src="./pics/untitled/W-forkKnife.webp"
+            class="w-100 gal-image"
+            alt="Fork and knife grazing on porcelain"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-forkKnife" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>3D view deconstruction</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-forkKnife.webp"
+                    class="w-100 gal-image"
+                    alt="Fork and knife grazing on porcelain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+      </div>
+
+      <!-- %%%%%%%%%%%%%%%% -->
+
+      <div class="col-md-4 mb-0">
+
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-capdissolve">
+            <img
+            src="./pics/untitled/W-capdissolve.webp"
+            class="w-100 gal-image"
+            alt="Plastic bootle cap dissolving in deep water"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-capdissolve" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>3D view deconstracted scene</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-capdissolve.webp"
+                    class="w-100 gal-image"
+                    alt="Plastic bootle cap dissolving in deep water"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-floatinggirl">
+            <img
+            src="./pics/untitled/W-floatinggirl-deconst.webp"
+            class="w-100 gal-image"
+            alt="Girl in trance floating in the middle of a room"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-floatinggirl" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>3D view deconstruction</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-floatinggirl-deconst.webp"
+                    class="w-100 gal-image"
+                    alt="Girl in trance floating in the middle of a room"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-capsinkbottom">
+            <img
+            src="./pics/untitled/W-capsinkbottom.webp"
+            class="w-100 gal-image"
+            alt="A dissolving plastic cap sinking into deep"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-capsinkbottom" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>3D view deconstracted scene</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-capsinkbottom.webp"
+                    class="w-100 gal-image"
+                    alt="A dissolving plastic cap sinking into deep"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+      </div>
+
+      <!-- %%%%%%%%%%%%%%%% -->
+
+      <div class="col-md-4 mb-0">
+        <div>
+            <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-wideGirl">
+              <img
+              src="./pics/untitled/V-wideGirl.webp"
+              class="w-100 gal-image"
+              alt="Girl in trance floating in the middle of a room"
+              style="object-fit: cover;
+                height: 960px;" 
+              />
+            </a>
+
+            <div id="exampleModal-wideGirl" class="modal" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+                <div class="modal-content bg-dark">
+                  <div class="modal-header">
+                    <h2>Scene from movie</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="./pics/untitled/V-wideGirl.webp"
+                      class="w-100 gal-image"
+                      alt="Girl in trance floating in the middle of a room"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>            
+        </div>
+
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-poset">
+            <img
+            src="./pics/untitled/W-poset.webp"
+            class="w-100 gal-image"
+            alt="A plastic bag floating in air"
+            style="object-fit: cover;
+              height: 480px;"
+            />
+          </a>
+
+          <div id="exampleModal-poset" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>Secene from movie</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-poset.webp"
+                    class="w-100 gal-image"
+                    alt="A plastic bag floating in air"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+      </div>
+
+      <!-- %%%%%%%%%%%%%%%% -->
+      
+    </div>
+
+    <footer class="mt-5 text-white-50 mx-auto position-relative w-100">
+      <p>/// canmustafayilmaz - 2022</p>
+    </footer>
+  </div>
+  
+  <!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="custom.js"></script> 
+</body>
