@@ -18,91 +18,90 @@
 </head>
 
 <body>
-  <div style="
-    background: url('./pics/#cover-project_name.png') no-repeat center center/cover; height: 100vh; overflow-x: hidden;">
 
-    <nav id="vanish" class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
-      <div class="container-fluid mx-lg-5">
-        <a class="navbar-brand" href="index.html">
-          <img src="./pics/logo_header.png" width="30" height="30" alt="C"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav id="vanish" class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
+    <div class="container-fluid mx-lg-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="./pics/logo_header.png" width="30" height="30" alt="C"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="offcanvas offcanvas-start text-bg-primary" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-          <a class="navbar-brand mx-auto my-5 py-2 d-lg-none" href="index.html">
-            <img src="./pics/logo_offcanvas.png" width="100" height="100" alt="C"></a>
+      <div class="offcanvas offcanvas-start text-bg-primary" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <a class="navbar-brand mx-auto my-5 py-2 d-lg-none" href="index.html">
+          <img src="./pics/logo_offcanvas.png" width="100" height="100" alt="C"></a>
 
-          <ul id="offcanvas-text" class="navbar-nav ms-auto mb-2 mb-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="portfolio-page.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact-page.html">Contact</a>
-            </li>
-          </ul>
+        <ul id="offcanvas-text" class="navbar-nav ms-auto mb-2 mb-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="portfolio-page.html">Portfolio</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact-page.html">Contact</a>
+          </li>
+        </ul>
 
-          <p class="mt-auto text-white-50 mx-auto text-center position-relative w-100 d-lg-none">
-            /// canmustafayilmaz - 2022
-          </p>
-        </div>
+        <p class="mt-auto text-white-50 mx-auto text-center position-relative w-100 d-lg-none">
+          /// canmustafayilmaz - 2022
+        </p>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- <div class="position-absolute top-50 start-0 translate-middle-y banner-text">
-      <h1>Portfolio</h1>
-      <p>A mix of personal and clients projects.</p>
-    </div> -->
-    <a id="jump-btn" class="btn btn-lg text-nowrap text-white position-absolute bottom-0 start-50 translate-middle" href="#scroll" role="button">
-      <div class="arrow-anim">
-        &#9660;
-      </div>
-    </a>
-  </div>
+  <a class="back-to-top btn btn-lg btn-outline-light cus_hidden" role="button">&#9650;</a>
 
   <div id="scroll" class="d-flex flex-column justify-content-center bg-dark text-white text-center"  style="overflow-x: hidden;">
 
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
+    <section class="text-center container" style="padding-top: 100px;">
+      
+      <div style="max-width: 800px; margin: 0 auto;">
+        <video class="w-100" id="player" controls
+            crossorigin
+            playsinline
+            poster="./pics/untitled/video_cover.jpg">
+          <source src="./pics/untitled/untitled_movie.webm" type="video/webm" />
+        </video>
+      </div>
+      
+
+        <div class="col-lg-6 col-md-8 mx-auto my-5">
           <h1 class="fw-light">Album example</h1>
           <p class="lead text-white">Something short and leading about the collection below—its contents, 
             the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it 
             entirely.
           </p>
         </div>
-      </div>
     </section>
+    <div class="row gx-0 mx-xl-5">
+      <div class="col-md-4 mb-0">
 
-    <div class="row gx-0"> 
-      
-      <div class="col-md-6 col-lg-4 col-xxl-3 mb-0">
+        <!-- ################## -->
+
         <div>
-            <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-fishonplate">
               <img
-              src="./pics/test/1.png"
+              src="./pics/untitled/V-fishOnPlate.webp"
               class="w-100 gal-image"
-              alt="Boat on Calm Water"
+              alt="Fish on Plate"
               style="object-fit: cover;
-                height: 480px;" 
+                height: 960px;" 
               />
             </a>
 
-            <div id="exampleModal" class="modal" tabindex="-1">
+            <div id="exampleModal-fishonplate" class="modal" tabindex="-1">
               <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
                 <div class="modal-content bg-dark">
                   <div class="modal-header">
-                    <h2>Describe Image</h2>
+                    <h2>Scene Deconstruction</h2>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <img
-                      src="./pics/test/1.png"
+                      src="./pics/untitled/V-fishOnPlate.webp"
                       class="w-100 gal-image"
-                      alt="Boat on Calm Water"
+                      alt="Fish on Plate"
                     />
                   </div>
                 </div>
@@ -113,28 +112,60 @@
         <!-- ################## -->
 
         <div>
-          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-describe">
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-fishscales">
             <img
-            src="pics/test/2.png"
+            src="./pics/untitled/S-fishScales.webp"
             class="w-100 gal-image"
-            alt="Boat on Calm Water"
+            alt="Fish Scale Texture"
             style="object-fit: cover;
-              height: 480px;"
+              height: 240px;"
             />
           </a>
 
-          <div id="exampleModal-describe" class="modal" tabindex="-1">
+          <div id="exampleModal-fishscales" class="modal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
               <div class="modal-content bg-dark">
                 <div class="modal-header">
-                  <h3>Describe Image</h3>
+                  <h3>Fish Scale Texture</h3>
                   <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <img
-                    src="pics/test/2.png"
+                    src="./pics/untitled/S-fishScales.webp"
                     class="w-100 gal-image"
-                    alt="Boat on Calm Water"
+                    alt="Fish Scale Texture"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+        
+        <!-- ################## -->
+
+        <div>
+          <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal-fishEaten">
+            <img
+            src="./pics/untitled/W-half-fishEaten.webp"
+            class="w-100 gal-image"
+            alt="Eaten fish on a plate"
+            style="object-fit: cover;
+              height: 240px;"
+            />
+          </a>
+
+          <div id="exampleModal-fishEaten" class="modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down modal-xl">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3>Scene from movie</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="./pics/untitled/W-half-fishEaten.webp"
+                    class="w-100 gal-image"
+                    alt="Eaten fish on a plate"
                   />
                 </div>
               </div>
@@ -147,12 +178,11 @@
       </div>
 
       <!-- %%%%%%%%%%%%%%%% -->
-      
-    </div>
 
-    <footer class="mt-5 text-white-50 mx-auto position-relative w-100">
-      <p>/// canmustafayilmaz - 2022</p>
-    </footer>
+      <footer class="mt-5 text-white-50 mx-auto position-relative w-100">
+        <p>/// canmustafayilmaz - 2022</p>
+      </footer>
+    </div>
   </div>
   
   <!-- javascript -->

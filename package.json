@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/c42m05/c42m05#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0-beta1"
+    "bootstrap": "^5.2.0-beta1",
+    "fix-webm-duration": "^1.0.5"
   }
 }

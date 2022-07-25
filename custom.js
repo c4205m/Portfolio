@@ -4,8 +4,8 @@
 //HEADER CONTROL -OPACITY AND COLOR
 
 var navElement = document.querySelector("#vanish");
-var threshold = 50;
-var color = "bg-secondary";
+var headerThreshold = 50;
+var color = "bg-dark";
 var transparent = "bg-transparent"
 
 //Check position and initialize
@@ -14,12 +14,12 @@ window.addEventListener("scroll", () => {
     var scrollElementRect = document.querySelector("#scroll").getBoundingClientRect();
     var scrollElement = Math.round(scrollElementRect.top);
 
-    if (scrollElement <= threshold) {
+    if (scrollElement <= headerThreshold) {
 
         navElement.classList.remove(transparent);
         navElement.classList.add(color);
     
-    } else if (scrollElement > threshold) {
+    } else if (scrollElement > headerThreshold) {
 
         navElement.classList.remove(color);
         navElement.classList.add(transparent);
@@ -31,7 +31,6 @@ window.addEventListener("scroll", () => {
 //Check position
 var scrollElementRectS = document.querySelector("#scroll").getBoundingClientRect();
 var scrollElementS = Math.round(scrollElementRectS.top);
-console.log(scrollElementS);
 
 function startingPosition () {
 
@@ -131,14 +130,75 @@ function validate(field, regex) {
     field.className = 'form-control invalid';
 
   }
+};
+
+//
+//JUMP TO TOP
+//
+
+//Show hidden element
+
+const showOnPx = 500;
+const backToTopButton = document.querySelector(".back-to-top");
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+
+        backToTopButton.classList.remove("cus_hidden");
+
+    } else {
+
+        backToTopButton.classList.add("cus_hidden");
+  
+    }
+});
+
+//
+
+const goToTop = () => {
+    document.body.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
+backToTopButton.addEventListener("click", goToTop);
+
+//
+// AUTOPAUSE VIDEO
+//
+
+if(!!window.IntersectionObserver){
+	let video = document.querySelector('video');
+	let isPaused = false; /* flag for auto-pausing of the video */
+	let observer = new IntersectionObserver((entries, observer) => { 
+		entries.forEach(entry => {
+			if(entry.intersectionRatio!=1  && !video.paused){
+				video.pause(); isPaused = true;
+			}
+			else if(isPaused) {
+                video.play(); isPaused=false;
+            }
+
+		});
+	}, {threshold: 1});
+	observer.observe(video) ;
 }
 
 //
 //FORM CLEAN ON REFRESH
 //
-
+function resetForm() {
+    
     document.getElementById('firstName').value ='';
     document.getElementById('lastName').value ='';
     document.getElementById('emailInfo').value ='';
     document.getElementById('phoneNumber').value ='';
     document.getElementById('comments').value ='';
+
+};
+
+window.onload = resetForm;

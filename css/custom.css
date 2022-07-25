@@ -110,6 +110,19 @@
     transition: opacity .4s ease-out;
   }
 
+  /* BACK TO TOP BUTTON */
+
+  .back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 10;
+  }
+
+  .cus_hidden {
+    display: none;
+  }
+  
   /* MEDIA QUERIES */
 
   @media (min-width: 1300px) {
