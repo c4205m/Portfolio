@@ -6,7 +6,7 @@
 var navElement = document.querySelector("#vanish");
 var headerThreshold = 50;
 var color = "bg-dark";
-var transparent = "bg-transparent"
+var transparent = "bg-transparent";
 
 //Check position and initialize
 window.addEventListener("scroll", () => {
@@ -49,6 +49,11 @@ function startingPosition () {
 
 window.onload = startingPosition;
 
+
+//
+//IMG HOVER ON MOBILE
+//
+//AND
 //HEADER LIST SIZE CONTROL
 var ulElement = document.querySelector("#offcanvas-text");
 
@@ -66,6 +71,42 @@ if (mediaQuery.matches) {
         "start-50",
         "translate-middle",
         "fs-1");
+
+        if (document.querySelector('.img-box') !== null) {
+
+            let imgbox = document.querySelectorAll('.img-box');
+            let mobileScrl = new IntersectionObserver((entries, o) => { 
+                // console.log(entries);
+        
+                entries.forEach(entry => {
+                    
+                    // console.log(entry);
+        
+                    if(entry.isIntersecting){
+        
+                        entry.target.firstElementChild.style.opacity = "1";
+                        setTimeout(stupid, 300);
+                        
+                        function stupid() {
+                            entry.target.lastElementChild.style.opacity = "1";
+                            // console.log("time is up");
+                        }
+        
+                    }
+                    else {
+        
+                        entry.target.firstElementChild.style.opacity = "0.6";
+                        entry.target.lastElementChild.style.opacity = "0";
+                    
+                    }
+        
+                });
+            }, {threshold: .4});
+        
+            imgbox.forEach(function (element) {
+                mobileScrl.observe(element);
+            });  
+        }
 
 }
 
@@ -94,6 +135,42 @@ function checkMediaQuery() {
             "translate-middle",
             "fs-1");
   }
+
+    if (document.querySelector('.img-box') !== null) {
+
+        let imgbox = document.querySelectorAll('.img-box');
+        let mobileScrl = new IntersectionObserver((entries, o) => { 
+            // console.log(entries);
+
+            entries.forEach(entry => {
+                
+                // console.log(entry);
+
+                if(entry.isIntersecting){
+
+                    entry.target.firstElementChild.style.opacity = "1";
+                    setTimeout(stupid, 300);
+                    
+                    function stupid() {
+                        entry.target.lastElementChild.style.opacity = "1";
+                        // console.log("time is up");
+                    }
+
+                }
+                else {
+
+                    entry.target.firstElementChild.style.opacity = "0.6";
+                    entry.target.lastElementChild.style.opacity = "0";
+                
+                }
+
+            });
+        }, {threshold: .4});
+
+            imgbox.forEach(function (element) {
+                mobileScrl.observe(element);
+            });  
+    }
 }
 
 window.addEventListener('resize', checkMediaQuery);
@@ -135,57 +212,63 @@ function validate(field, regex) {
 //
 //JUMP TO TOP
 //
+if (document.querySelector('.back-to-top') !== null) {
+    //Show hidden element
 
-//Show hidden element
+    const showOnPx = 500;
+    const backToTopButton = document.querySelector(".back-to-top");
 
-const showOnPx = 500;
-const backToTopButton = document.querySelector(".back-to-top");
+    const scrollContainer = () => {
+    return document.documentElement || document.body;
+    };
 
-const scrollContainer = () => {
-  return document.documentElement || document.body;
-};
+    document.addEventListener("scroll", () => {
+    if (scrollContainer().scrollTop > showOnPx) {
 
-document.addEventListener("scroll", () => {
-  if (scrollContainer().scrollTop > showOnPx) {
+            backToTopButton.classList.remove("cus_hidden");
 
-        backToTopButton.classList.remove("cus_hidden");
+        } else {
 
-    } else {
-
-        backToTopButton.classList.add("cus_hidden");
-  
-    }
-});
-
-//
-
-const goToTop = () => {
-    document.body.scrollIntoView({
-      behavior: "smooth",
+            backToTopButton.classList.add("cus_hidden");
+    
+        }
     });
-  };
 
-backToTopButton.addEventListener("click", goToTop);
+    //
+
+    const goToTop = () => {
+        document.body.scrollIntoView({
+        behavior: "smooth",
+        });
+    };
+
+    backToTopButton.addEventListener("click", goToTop);
+};
 
 //
 // AUTOPAUSE VIDEO
 //
 
-if(!!window.IntersectionObserver){
-	let video = document.querySelector('video');
-	let isPaused = false; /* flag for auto-pausing of the video */
-	let observer = new IntersectionObserver((entries, observer) => { 
-		entries.forEach(entry => {
-			if(entry.intersectionRatio!=1  && !video.paused){
-				video.pause(); isPaused = true;
-			}
-			else if(isPaused) {
-                video.play(); isPaused=false;
-            }
+if (document.querySelector('video') !== null) {
 
-		});
-	}, {threshold: 1});
-	observer.observe(video) ;
+    if(!!window.IntersectionObserver){
+        let video = document.querySelector('video');
+        let isPaused = false; /* flag for auto-pausing of the video */
+        let observer = new IntersectionObserver((entries, observer) => { 
+            entries.forEach(entry => {
+                if(entry.intersectionRatio!=1  && !video.paused){
+                    video.pause(); isPaused = true;
+                }
+                else if(isPaused) {
+                    video.play(); isPaused=false;
+                }
+
+            });
+        }, {threshold: 1});
+
+        observer.observe(video);
+
+    }
 }
 
 //
@@ -201,4 +284,8 @@ function resetForm() {
 
 };
 
-window.onload = resetForm;
+if (document.getElementById('firstName') !== null) {
+
+    window.onload = resetForm;
+
+}
