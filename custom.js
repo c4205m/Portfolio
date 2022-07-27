@@ -56,10 +56,38 @@ window.onload = startingPosition;
 //AND
 //HEADER LIST SIZE CONTROL
 var ulElement = document.querySelector("#offcanvas-text");
+var imgbox = document.querySelectorAll('.img-box');
+var mobileScrl = new IntersectionObserver((entries) => { 
+    console.log(entries);
+
+    entries.forEach(entry => {
+        
+        // console.log(entry);
+
+        if(entry.isIntersecting){
+
+            entry.target.firstElementChild.classList.remove("mobile-img-gal");
+            setTimeout(stupid, 400);
+            
+            function stupid() {
+                entry.target.lastElementChild.classList.toggle("mobile-card");
+                // console.log("time is up");
+            }
+
+        }
+        else {
+
+            entry.target.firstElementChild.classList.toggle("mobile-img-gal");
+            entry.target.lastElementChild.classList.remove("mobile-card");
+        
+        }
+
+    });
+}, {threshold: .4});
 
 //Check size
 
-const mediaQuery = window.matchMedia('(max-width: 992px)')
+const mediaQuery = window.matchMedia('(max-width: 992px)');
 
 // Check if the media query is true
 if (mediaQuery.matches) {
@@ -72,52 +100,26 @@ if (mediaQuery.matches) {
         "translate-middle",
         "fs-1");
 
-        if (document.querySelector('.img-box') !== null) {
+    if (document.querySelector('.img-box') !== null) {
 
-            let imgbox = document.querySelectorAll('.img-box');
-            let mobileScrl = new IntersectionObserver((entries, o) => { 
-                // console.log(entries);
-        
-                entries.forEach(entry => {
-                    
-                    // console.log(entry);
-        
-                    if(entry.isIntersecting){
-        
-                        entry.target.firstElementChild.classList.remove("mobile-img-gal");
-                        entry.target.firstElementChild.classList.remove("gal-image-hover");
-                        setTimeout(stupid, 400);
-                        
-                        function stupid() {
-                            entry.target.lastElementChild.classList.toggle("mobile-card");
-                            // console.log("time is up");
-                        }
-    
-                    }
-                    else {
-    
-                        entry.target.firstElementChild.classList.toggle("mobile-img-gal");
-                        entry.target.lastElementChild.classList.remove("mobile-card");
-                    
-                    }
-        
-                });
-            }, {threshold: .3});
-        
-            imgbox.forEach(function (element) {
-                mobileScrl.observe(element);
-            });  
-        }
+        imgbox.forEach(function (element) {
+            mobileScrl.observe(element);
+        });
 
+        imgbox.forEach(function (entry){
+            entry.firstElementChild.classList.remove("gal-image-hover");
+        });
+    }
 }
 
 //Check resizes and initiate
 function checkMediaQuery() {
   
     // Check if the media query is true
-  if (window.innerWidth <= 992) {
-    
-    // Then log the following message to the console
+    if (window.innerWidth < 992) {
+
+        // console.log("SMALL");
+        
         ulElement.classList.add(
             "text-center",
             "position-absolute",
@@ -128,42 +130,15 @@ function checkMediaQuery() {
 
         if (document.querySelector('.img-box') !== null) {
 
-            let imgbox = document.querySelectorAll('.img-box');
-            let mobileScrl = new IntersectionObserver((entries, o) => { 
-                // console.log(entries);
-    
-                entries.forEach(entry => {
-                    
-                    // console.log(entry);
-    
-                    if(entry.isIntersecting){
-    
-                        entry.target.firstElementChild.classList.remove("mobile-img-gal");
-                        entry.target.firstElementChild.classList.remove("gal-image-hover");
-                        setTimeout(stupid, 400);
-                        
-                        function stupid() {
-                            entry.target.lastElementChild.classList.toggle("mobile-card");
-                            // console.log("time is up");
-                        }
-    
-                    }
-                    else {
-    
-                        entry.target.firstElementChild.classList.toggle("mobile-img-gal");
-                        entry.target.lastElementChild.classList.remove("mobile-card");
-                    
-                    }
-    
-                });
-            }, {threshold: .4});
-    
-                imgbox.forEach(function (element) {
-                    mobileScrl.observe(element);
-                });  
+            imgbox.forEach(function (entry){
+                entry.firstElementChild.classList.remove("gal-image-hover");
+            });
+
         }
   
     } else {
+
+        // console.log("BIG");
 
         ulElement.classList.remove(
             "text-center",
@@ -174,14 +149,13 @@ function checkMediaQuery() {
             "fs-1");
 
         if (document.querySelector('.img-box') !== null) {
-
-            let imgbox = document.querySelectorAll('.img-box');
             
             imgbox.forEach(function (entry){
                 entry.firstElementChild.classList.remove("mobile-img-gal");
                 entry.lastElementChild.classList.remove("mobile-card");
-            })
-        }
+                entry.firstElementChild.classList.add("gal-image-hover");
+            });
+        } 
     }
 }
 
