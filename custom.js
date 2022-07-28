@@ -67,7 +67,7 @@ var mobileScrl = new IntersectionObserver((entries) => {
         if(entry.isIntersecting){
 
             entry.target.firstElementChild.classList.remove("mobile-img-gal");
-            setTimeout(stupid, 400);
+            setTimeout(stupid, 300);
             
             function stupid() {
                 entry.target.lastElementChild.classList.toggle("mobile-card");
